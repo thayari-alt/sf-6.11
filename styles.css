@@ -1,0 +1,97 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Lora', serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: url(./images/earth-1149733_1920.jpg) center no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.header__title {
+  font-weight: normal;
+  font-size: 4rem;
+}
+
+.news, .footer {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  text-align: center;
+}
+
+.menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #636b6f;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+.menu a:hover, .article a:hover {
+  text-decoration: none;
+  color: #0085a1;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+.news {
+  padding: 50px 0 32px;
+}
+
+.article {
+  margin-bottom: 32px;
+  padding: 6px 15px;
+  /* border-bottom: 1px solid #808080; */
+}
+
+.article:nth-child(2n) {
+  background-color: #ebf8ff;
+}
+
+.article img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.article a {
+  text-decoration: none;
+  color: rgb(33, 37, 41);
+}
+
+.article__title {
+  font-weight: 300;
+  margin-bottom: 7px;
+}
+
+.article__meta {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  color: rgb(134, 142, 150);
+}
+
+.new::before {
+  content: 'New';
+  color: rgb(194, 39, 39);
+  margin-right: 3px;
+  vertical-align: super;
+  font-size: 0.7em;
+  font-weight: 600;
+}
